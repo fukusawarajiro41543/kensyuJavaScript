@@ -1,23 +1,23 @@
-<html >
-<head >
-<meta charset ="utf -8">
-<title > 基数変換</ title >
-<script >
+<html>
+<head>
+<meta charset="utf-8">
+<title>基数変換</title>
+<script>
 function f1() {
-var r1 = document.getElementById ("r1"). value;
-var r2 = document.getElementById ("r2"). value;
-var v1 = document.getElementById ("v1"). value;
-var v = parseInt(v1 ,r1);
-document.getElementById ("v2"). value = v.toString(r2);
+    var r1 = document.getElementById("r1").value;
+    var r2 = document.getElementById("r2").value;
+    var v1 = document.getElementById("v1").value;
+    var v = parseInt(v1,r1);
+    document.getElementById ("v2").value = v.toString(r2);
 }
-</script >
-</head >
-<body >
-基数1: < input type =" text" id="r1" value ="10" >
-基数2: < input type =" text" id="r2" value ="16"><br >
-値1: < input type =" text" id="v1" value ="255" >
-<input type =" button" value =" → 変換→" onClick ="f1()">
-値2: < input type =" text" id="v2">
-</body >
-</html >
+</script>
+</head>
+<body>
+基数1:<input type ="text" id="r1" value ="10">
+基数2:<input type ="text" id="r2" value ="16"><br>
+値1:<input type ="text" id="v1" value ="255">
+<input type ="button" value ="→変換→" onClick ="f1()">
+値2:<input type ="text" id="v2">
+</body>
+</html>
 //確認用URL:https://fukusawarajiro41543.github.io/kensyuJavaScript/Apps/HTML5p28_convRadix.html
