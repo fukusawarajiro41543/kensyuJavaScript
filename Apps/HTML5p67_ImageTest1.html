@@ -1,38 +1,36 @@
-HTML5p67ImageTest1.html
-
-<!DOCTYPE html >
+<!DOCTYPE html>
 <html lang="ja">
-<head >
+<head>
 <meta charset="utf -8">
-<title > Imageテスト </title >
-<style >
+<title> Imageテスト </title>
+<style>
 #im {
-width: 100px;
+    width: 100px;
 }
-</style >
-<script >
+</style>
+<script>
 // 画像をまとめて読み込む処理
-let images = new Array(); // I m a g e オブジェクトの配列
+let images = new Array();                // Imageオブジェクトの配列
 for ( let i = 1; i < 4; i++ ) {
-let fname = "ImageTest1_"+i+".gif"; // ファイル名の設定
-let image = new Image();
-image.src = fname; // 画像の読み込み
-images.push(image); // 配列に追加
+    let fname = "ImageTest1_"+i+".gif"; // ファイル名の設定
+    let image = new Image();
+    image.src = fname;                   // 画像の読み込み
+    images.push(image);                  // 配列に追加
 }
 // 画像表示を切り替える処理
 let n = 0;
 function f1() {
-im.src = images[n].src; // <img > 要素の画像を切り替える
-n++;
-if ( n > 2 ) {
-n = 0;
+    im.src = images[n].src; // <img > 要素の画像を切り替える
+    n++;
+    if ( n > 2 ) {
+        n = 0;
+    }
 }
-}
-</script >
-</head >
-<body >
-<img src="" alt=" 画像の表示場所です" id="im"><br >
+</script>
+</head>
+<body>
+<img src="" alt="画像の表示場所です" id="im"><br>
 <input type="button" value ="next" onClick="f1()">
 //確認用url:https://fukusawarajiro41543.github.io/kensyuJavaScript/Apps/HTML5p67_ImageTest1.html
-</body >
-</html >
+</body>
+</html>
